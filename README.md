@@ -118,6 +118,10 @@ To compile the package, `mvn compile`.
 
 To run the test suite run, `mvn test`.
 
+## Run example
+
+Clone the repo and run `mvn compile && mvn exec:java -Dexec.mainClass=example.BrowserStackLocalExample`
+
 ### Reporting bugs
 
 You can submit bug reports either in the Github issue tracker.
