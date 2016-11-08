@@ -77,6 +77,7 @@ public class Local {
 
             JSONObject obj = new JSONObject(!stdout.equals("") ? stdout : stderr);
             if(!obj.getString("state").equals("connected")){
+                System.out.println(!stdout.equals("") ? stdout : stderr);
                 throw new LocalException(obj.getJSONObject("message").getString("message"));
             }
             else {
